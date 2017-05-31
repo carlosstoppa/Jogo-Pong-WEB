@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+	<title>Pong em javascript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<meta name="description" content="jquery"/>
+	<meta name="keywords" content="jquery" />
+	<meta name="robots" content="all, index, follow" />
+	<link href="_style/default.css" rel="stylesheet" type="text/css"/>
+	<link href="_style/pong.css" rel="stylesheet" type="text/css"/>
+	<!--<script src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js" type="text/javascript"></script>!-->
+	<script type="text/javascript" src="_scripts/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript" src="_scripts/pong.js"></script>
+</head>
+<body>
+	<body>
+	<p class="intro"> 
+		Selecione a dificuldade antes de começar.<br/>
+		Clique em <strong>Play</strong> para começar e aperte <strong>Q</strong> para subir e <strong>A</strong> para descer,<br/>
+		ou utilize o <strong>scroll do mouse</strong> (mouse wheel).<br/>
+		Quem fizer 5 pontos vence.
+	</p>
+	<div id="campo">
+		<span id="raquete_1" class="raquete">Raquete</span>
+		<span id="raquete_2" class="raquete">Raquete</span>
+		<span id="rede">Rede</span>
+		<span id="bola" class="start_raquete">
+			Bola
+			<em id="c_lt" class="corner">Corner</em>
+			<em id="c_rt" class="corner">Corner</em>
+			<em id="c_lb" class="corner">Corner</em>
+			<em id="c_rb" class="corner">Corner</em>
+		</span>
+		<span id="playgame"> Play </span>
+	</div>
+	<div id="placar">
+		<span id="time_1">0</span>
+		<span id="time_2">0</span>
+	</div>
+		
+	<p class="dificuldade"> 
+		Dificuldade: 
+		<select name="dificuldade" id="dificuldade">
+			<option value="1"> Muito fácil </option>
+			<option value="2"> Fácil </option>
+			<option value="3" selected="selected"> Médio </option>
+			<option value="4"> Difícil </option>
+			<option value="5"> Muito difícil </option>
+			<option value="6"> Impossível? </option>
+		</select>
+		
+	</p>
+		
+</body>
+</html>
+
